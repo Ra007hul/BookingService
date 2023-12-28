@@ -11,7 +11,7 @@ const setupAndStartServer = ()=>{
     app.use('/api',apiRoutes)
     app.listen(PORT , ()=>{
         console.log(`Server started at port no ${PORT}`);
-        db.sequelize.sync({alter : true});
+        // db.sequelize.sync({alter : true});
     });
 }
 
